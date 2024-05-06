@@ -1,17 +1,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+
+    android:theme="@style/Theme.AppCompat.NoActionBar"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:orientation="vertical">
+
+    <android.widget.Toolbar
+        android:id="@+id/toolbarID"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:contentInsetEndWithActions="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00305A"
+        android:titleTextColor="@android:color/holo_orange_dark">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_marginTop="5dp"
+        android:layout_width="32dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        android:layout_height="25dp"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="15dp"
+        android:text="FITPASS"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#E77817"
+        android:layout_gravity="center"
+        android:gravity="center"></TextView>
+    <View
+        android:layout_width="32dp"
+        android:layout_height="32dp"></View>
+</LinearLayout>
+
+    </android.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#00305A"
+
+        />
 
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" /> <!-- Set the height here -->
+        android:layout_height="match_parent"></WebView>
 
     <!-- Other views can be added her200e if needed -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="THIS i s a text"
-        android:textColor="@android:color/black"></TextView>
+
 </LinearLayout>
+

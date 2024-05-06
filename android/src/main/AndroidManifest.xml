@@ -5,6 +5,7 @@
     <application>
         <activity
             android:name=".WebViewActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="false" />
     </application>
 
